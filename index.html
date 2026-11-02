@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <meta name="description" content="Discover, explore and book unforgettable experiences with Happenly." />
+  <title>Happenly — Find your next favourite thing</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell container">
+      <a class="brand" href="#top" aria-label="Happenly home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>happenly<span class="brand-period">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#discover">Discover</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle colour theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.5 8.5 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+        <button class="my-tickets-button" id="myTicketsButton" type="button">My tickets <span id="ticketCount" class="ticket-count">0</span></button>
+        <button class="menu-toggle icon-button" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#discover">Discover events</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About Happenly</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> GOOD THINGS ARE HAPPENING</div>
+        <h1 id="hero-title">Make room for<br />your <span>next story.</span></h1>
+        <p class="hero-description">From front-row moments to new skills and new friends, find experiences that make your days a little more memorable.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#discover">Explore events <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#how-it-works">How it works <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>M</span><span>S</span></div>
+          <div><strong>2,400+ happy attendees</strong><small>Finding their people, one event at a time.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="People enjoying a live music event">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85" alt="Crowd enjoying a live outdoor music performance" />
+          <div class="image-shade"></div>
+          <div class="hero-image-caption"><span class="live-dot"></span><span>MAKE MEMORIES, NOT PLANS</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">✦</span><span><strong>Something for everyone</strong><small>Music · Ideas · Culture · More</small></span></div>
+        <div class="floating-note note-bottom"><span class="note-calendar">17<br /><small>NOV</small></span><span><strong>City Lights Festival</strong><small>Bhubaneswar · 6:30 PM</small></span><span class="note-arrow">↗</span></div>
+        <div class="hero-scribble" aria-hidden="true">✳</div>
+      </div>
+      <div class="hero-bottom-line"><span>SCROLL TO FIND YOUR NEXT THING</span><span class="scroll-line"></span><span>01 / 04</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Happenly highlights">
+      <div class="container trust-inner">
+        <div><strong>Curated experiences</strong><span>Worth stepping out for</span></div>
+        <div><strong>Easy registration</strong><span>Your next plan in a few clicks</span></div>
+        <div><strong>Good people, good energy</strong><span>Meet your kind of crowd</span></div>
+      </div>
+    </section>
+
+    <section class="events-section section-space" id="discover">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot"></span> THE GOOD STUFF</div><h2>Find your <span>kind of event.</span></h2><p class="section-subtitle">A little inspiration for your calendar. A lot of memories for later.</p></div>
+          <div class="event-count-block"><span id="eventCount">08</span><small>EVENTS TO<br />EXPLORE</small></div>
+        </div>
+        <div class="discover-toolbar">
+          <div class="filter-tabs" id="categoryFilters" role="group" aria-label="Filter events by category">
+            <button class="filter-chip active" type="button" data-category="All" aria-pressed="true">All events <span>08</span></button>
+            <button class="filter-chip" type="button" data-category="Music" aria-pressed="false">Music</button>
+            <button class="filter-chip" type="button" data-category="Technology" aria-pressed="false">Technology</button>
+            <button class="filter-chip" type="button" data-category="Arts" aria-pressed="false">Arts & culture</button>
+            <button class="filter-chip" type="button" data-category="Food" aria-pressed="false">Food</button>
+            <button class="filter-chip" type="button" data-category="Wellness" aria-pressed="false">Wellness</button>
+          </div>
+          <label class="search-box" for="eventSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="eventSearch" type="search" placeholder="Search events..." autocomplete="off" /><kbd>Ctrl K</kbd></label>
+        </div>
+        <div class="events-grid" id="eventsGrid" aria-live="polite" aria-busy="false"></div>
+        <div class="empty-state" id="emptyState" hidden><span class="empty-icon">⌕</span><h3>No events found</h3><p>Try another keyword or choose a different category.</p><button class="button button-secondary" id="clearFilters" type="button">Clear filters</button></div>
+        <div class="load-more-row"><span>GOOD PLANS ARE CLOSER THAN YOU THINK.</span><span class="decorative-dash"></span><span>08 / 08</span></div>
+      </div>
+    </section>
+
+    <section class="feature-band" id="how-it-works">
+      <div class="container feature-grid">
+        <div class="feature-image"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=85" alt="Friends sharing a meal and enjoying time together" loading="lazy" /><div class="feature-image-label">THE BEST MOMENTS ARE SHARED.</div></div>
+        <div class="feature-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> LESS SCROLLING, MORE LIVING</div><h2>Your next favourite<br />memory is <span>out there.</span></h2><p>We bring interesting people and experiences together. Find an event that feels like you, save your spot, and show up ready for something good.</p>
+          <div class="steps-list">
+            <div class="step-item"><span class="step-number">01</span><div><strong>Discover something new</strong><small>Browse handpicked events by interest, date or city.</small></div></div>
+            <div class="step-item"><span class="step-number">02</span><div><strong>Save your spot</strong><small>Register in a few simple steps. No complicated process.</small></div></div>
+            <div class="step-item"><span class="step-number">03</span><div><strong>Go make a story</strong><small>Show up, meet people and enjoy the experience.</small></div></div>
+          </div>
+          <a class="button button-primary" href="#discover">Find an event <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section container" aria-label="Next event countdown">
+      <div class="countdown-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> UP NEXT</div><h2>Something good is<br />just around the corner.</h2><p>Our next featured experience is getting closer. Have you saved your spot?</p><button class="text-link countdown-event-link" id="countdownEventLink" type="button">Meet us there <span aria-hidden="true">→</span></button></div>
+      <div class="countdown-card"><div class="countdown-card-top"><span>COUNTING DOWN TO</span><span class="countdown-live"><i></i> LIVE COUNTDOWN</span></div><h3 id="countdownEventName">City Lights Festival</h3><div class="countdown-units"><div><strong id="days">00</strong><span>DAYS</span></div><b>:</b><div><strong id="hours">00</strong><span>HOURS</span></div><b>:</b><div><strong id="minutes">00</strong><span>MINUTES</span></div><b>:</b><div><strong id="seconds">00</strong><span>SECONDS</span></div></div><div class="countdown-progress"><span id="countdownProgress"></span></div><div class="countdown-foot"><span id="countdownDate">17 November 2026 · 6:30 PM</span><span>DON'T BE LATE <b>↗</b></span></div></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-inner"><div><div class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE ABOUT US</div><h2>Life happens<br />when <span>you show up.</span></h2></div><div class="about-copy"><p>Happenly is a simple place to find your next experience. Whether you're here for the music, the ideas, the food or the people, there's always a reason to get out there.</p><a class="text-link" href="#discover">Explore what's happening <span aria-hidden="true">→</span></a></div><span class="about-stamp" aria-hidden="true">HAVE<br />A GOOD<br />TIME <b>✳</b></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>happenly<span class="brand-period">.</span></span></a><p>Find your people. Find your thing.<br />Make a little more happen.</p></div><div class="footer-links"><div><span class="footer-label">EXPLORE</span><a href="#discover">All events</a><a href="#how-it-works">How it works</a><a href="#about">Our story</a></div><div><span class="footer-label">SAY HELLO</span><a href="mailto:hello@happenly.example">hello@happenly.example</a><a href="#top">Back to top ↑</a></div></div></div>
+    <div class="container footer-bottom"><span>© <span id="currentYear"></span> Happenly. Made for good days.</span><span>MADE WITH A LITTLE ✳ AND A LOT OF HEART.</span></div>
+  </footer>
+
+  <!-- Event details dialog -->
+  <dialog class="modal event-modal" id="eventModal" aria-labelledby="eventModalTitle">
+    <div class="modal-shell event-modal-shell"><button class="modal-close" type="button" data-close="eventModal" aria-label="Close event details">×</button><div id="eventModalContent"></div></div>
+  </dialog>
+
+  <!-- Registration dialog -->
+  <dialog class="modal registration-modal" id="registrationModal" aria-labelledby="registrationTitle">
+    <div class="modal-shell form-modal-shell"><button class="modal-close" type="button" data-close="registrationModal" aria-label="Close registration">×</button>
+      <div class="form-modal-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT STORY STARTS HERE</div><h2 id="registrationTitle">Save your <span>spot.</span></h2><p>Just a few details and you're on the list.</p></div>
+      <form id="registrationForm" novalidate>
+        <div class="form-row"><label for="fullName">Full name <span>*</span></label><input id="fullName" name="fullName" type="text" placeholder="e.g. Aditi Sharma" autocomplete="name" required minlength="2" maxlength="70" /><small class="field-error" id="nameError"></small></div>
+        <div class="form-row"><label for="email">Email address <span>*</span></label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required maxlength="120" /><small class="field-error" id="emailError"></small></div>
+        <div class="form-row"><label for="phone">Phone number <span>*</span></label><div class="phone-field"><span>+91</span><input id="phone" name="phone" type="tel" placeholder="98765 43210" autocomplete="tel-national" inputmode="numeric" required maxlength="10" /><small class="field-error" id="phoneError"></small></div></div>
+        <div class="form-row"><label for="selectedEvent">Choose your event <span>*</span></label><select id="selectedEvent" name="selectedEvent" required><option value="">Select an event</option></select><small class="field-error" id="eventError"></small></div>
+        <label class="consent-row"><input id="consent" type="checkbox" required /><span class="custom-check" aria-hidden="true"></span><span>I agree to be contacted about this event and understand my registration details will be saved in this browser.</span></label><small class="field-error consent-error" id="consentError"></small>
+        <button class="button button-primary submit-button" type="submit">Complete registration <span aria-hidden="true">↗</span></button>
+        <p class="form-privacy">Your details stay in this browser demo. No payment is collected.</p>
+      </form>
+      <div class="success-panel" id="successPanel" hidden><div class="success-check">✓</div><div class="eyebrow"><span class="eyebrow-dot"></span> YOU'RE ON THE LIST</div><h3>It's happening!</h3><p id="successMessage">Your registration has been saved.</p><div class="success-ticket" id="successTicket"></div><button class="button button-primary" id="successDone" type="button">Lovely, thanks! <span aria-hidden="true">✦</span></button></div>
+    </div>
+  </dialog>
+
+  <!-- My tickets dialog -->
+  <dialog class="modal tickets-modal" id="ticketsModal" aria-labelledby="ticketsTitle">
+    <div class="modal-shell tickets-modal-shell"><button class="modal-close" type="button" data-close="ticketsModal" aria-label="Close my tickets">×</button><div class="eyebrow"><span class="eyebrow-dot"></span> YOUR PLANS, ALL IN ONE PLACE</div><h2 id="ticketsTitle">My <span>tickets.</span></h2><p class="tickets-intro">Your Happenly registrations saved on this device.</p><div id="ticketsList" class="tickets-list"></div><div class="tickets-actions"><button class="button button-secondary" id="exportTickets" type="button">Export registrations ↓</button><button class="text-link" id="clearTickets" type="button">Clear all</button></div></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
